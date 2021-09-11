@@ -1,0 +1,238 @@
+.mainform{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.form__container{
+    width: 260px;
+    max-width: 260px;
+    min-width: 260px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #e5e6e9;
+    padding: 20px;
+    border-radius: 13px;
+   
+}
+.heading{
+    color: #273142;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.form__Options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button_options{
+   width: 100%;
+   display: flex;
+   border-radius: 4px;
+   padding: 0 4px;
+   margin-bottom: 10px;
+}
+.button_options > div{
+    flex: 1;
+    text-align: center;
+    padding: 7px 5px;
+    background: rgb(229, 230, 233);
+    border-color: rgb(217, 218, 221);
+    border-style: solid;
+    border-width: 1.02px 1px 1px 1px;
+    cursor: pointer;
+    transition: color 0.3s ease 0s, background 0.3s ease 0s, border-color 0.3s ease 0s, box-shadow 0.3s ease 0s;
+    font-size: 14px;
+    color: rgb(99, 106, 119);
+}
+.button_options > div:hover{
+    color: rgb(54, 127, 211);
+}
+.first__select{
+    width: 100%;
+}
+.first__select select{
+    width: 100%;
+    background-color: #e5e6e9;
+    border: 1px solid #d9dadd;
+    border-radius: 4px;
+    outline: none;
+    font-variant: inherit;
+    font-size: 14px;
+    line-height: 1.5715;
+    cursor: pointer;
+    color: rgb(99, 106, 119);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    padding: 7px 10px ;
+}
+.first__select select::-ms-expand{
+    display: none;
+}
+.first__select select:hover{
+    border: 1px solid rgb(54, 127, 211);
+}
+
+.second__select{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+}
+.second__select select{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #e5e6e9;
+    border: 1px solid #d9dadd;
+    border-radius: 4px;
+    outline: none;
+    font-variant: inherit;
+    font-size: 14px;
+    line-height: 1.5715;
+    cursor: pointer;
+    color: rgb(99, 106, 119);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    padding: 7px 10px ;
+}
+.second__select select:hover{
+    border:  1px solid rgb(54, 127, 211);
+}
+.third__select{
+    width: 100%;
+    margin-top: 10px;
+}
+.third__select select{
+    width: 100%;
+    background-color: #e5e6e9;
+    border: 1px solid #d9dadd;
+    border-radius: 4px;
+    outline: none;
+    font-variant: inherit;
+    font-size: 14px;
+    line-height: 1.5715;
+    cursor: pointer;
+    color: rgb(99, 106, 119);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    padding: 7px 10px ;
+
+}
+.third__select select:hover{
+    border: 1px solid rgb(54, 127, 211);
+}
+.radio__section{
+   
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 20px;
+}
+.radio__section form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+   display: flex;
+   align-items: center;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 3px;
+      left: 3px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: white;
+  }
+.result{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      text-align: right!important;
+    font-size: 15px;
+      font-weight: 400;
+  }
+  .discount{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(99, 106, 119);;
+}
+.discount .off{
+    background:#20ba68;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.submit{
+    width: 100%;
+    background: rgb(54, 127, 211);
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+
+  .submit:hover{
+      background: rgb(74, 153, 243);
+      color: white;
+  }
